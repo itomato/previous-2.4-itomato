@@ -8,4 +8,10 @@ The GIMP was used to load and replace the character set. A patched up XCF file i
 
 I wanted to use Ohlfs, but can't seem to get the font converted for use on the Mac. May still try ;)
 
+CHANGELOG:
+Tue Jan 12 20:39:04 PST 2016
+- changes to dialog elements to use 'grayer' palette
+- macintosh hfs disk image size added
+
+
 -itomato
