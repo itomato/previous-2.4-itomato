@@ -45,3 +45,12 @@ I have also changed the colors in the SDL GUI to closely reflect the default gra
 	>  	Uint32 grey2 = SDL_MapRGB(pSdlGuiScrn->format, 73, 72, 85);
 
 
+# Using it
+
+Clone this repo
+
+Run tweak.sh
+
+Run build-mac.sh
+
+
