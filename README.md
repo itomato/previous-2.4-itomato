@@ -1,9 +1,37 @@
+
+#Previous DMG Build
+
+This directory contains the bits and pieces needed to create a macOS DMG with [appdmg](https://github.com/LinusU/node-appdmg).
+
+#Install appdmg
+
+    npm install -g appdmg
+
+#Generate DMG
+
+Copy a new build of Previous.app from src/ to this directory. Edit the JSON if necessary, and run appdmg like:
+
+    appdmg previous.appdmg.json ~/Previous.dmg ; open ~/Previous.dmg
+
+#Contents
+
+Previous.icns (I made this one to mimic the Peripherals boxes)
+
+background.png (snazzy hidden folder background)
+
+previous.appdmg.json (JSON package defs)
+
+
+![](previousdmg.png)
+
 # Tweaks
 This is a modification to the Previous SDL GUI to change from an Atari font to a more appropriate font, Apple Monaco.
 
 Instead of the 'X-ed out blob' icon Hatari uses to represent a directory, we have a simplistic 'folder' icon.
 
 It's a more or less complete replacement of all the characters, but as an American, it's difficult for me to ID and test all the characters represented.
+
+![](monaco-sdl-gui.jpg)
 
 The GIMP was used to load and replace the character set. A patched up XCF file is included. It uses a 10x16 grid, and *should* still have the appropriate letter/line spacing to make replacement a type-and-go operation.
 
@@ -49,8 +77,5 @@ I have also changed the colors in the SDL GUI to closely reflect the default gra
 
 Clone this repo
 
-Run tweak.sh
-
-Run build-mac.sh
-
+Run full-build...sh
 

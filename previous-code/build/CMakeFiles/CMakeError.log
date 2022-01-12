@@ -1,0 +1,131 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Determining if the function pcap_get_pfring_id exists failed with the following output:
+Change Dir: /Users/me/Code/Previous-tweaks/previous-code/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c24d7/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c24d7.dir/build.make CMakeFiles/cmTC_c24d7.dir/build
+Building C object CMakeFiles/cmTC_c24d7.dir/CheckFunctionExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pcap_get_pfring_id -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -MD -MT CMakeFiles/cmTC_c24d7.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_c24d7.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_c24d7.dir/CheckFunctionExists.c.o -c /usr/local/Cellar/cmake/3.21.1/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c24d7
+/usr/local/Cellar/cmake/3.21.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c24d7.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pcap_get_pfring_id -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/libpcap/lib  CMakeFiles/cmTC_c24d7.dir/CheckFunctionExists.c.o -o cmTC_c24d7  /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/lib/libpcap.tbd 
+Undefined symbols for architecture x86_64:
+  "_pcap_get_pfring_id", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_c24d7] Error 1
+make: *** [cmTC_c24d7/fast] Error 2
+
+
+
+Determining if files tchar.h exist failed with the following output:
+Change Dir: /Users/me/Code/Previous-tweaks/previous-code/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_785eb/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_785eb.dir/build.make CMakeFiles/cmTC_785eb.dir/build
+Building C object CMakeFiles/cmTC_785eb.dir/HAVE_TCHAR_H.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -MD -MT CMakeFiles/cmTC_785eb.dir/HAVE_TCHAR_H.c.o -MF CMakeFiles/cmTC_785eb.dir/HAVE_TCHAR_H.c.o.d -o CMakeFiles/cmTC_785eb.dir/HAVE_TCHAR_H.c.o -c /Users/me/Code/Previous-tweaks/previous-code/build/CMakeFiles/CheckIncludeFiles/HAVE_TCHAR_H.c
+/Users/me/Code/Previous-tweaks/previous-code/build/CMakeFiles/CheckIncludeFiles/HAVE_TCHAR_H.c:2:10: fatal error: 'tchar.h' file not found
+#include <tchar.h>
+         ^~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_785eb.dir/HAVE_TCHAR_H.c.o] Error 1
+make: *** [cmTC_785eb/fast] Error 2
+
+
+Source:
+/* */
+#include <tchar.h>
+
+
+int main(void){return 0;}
+
+Determining if the function lsetxattr exists failed with the following output:
+Change Dir: /Users/me/Code/Previous-tweaks/previous-code/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_68c10/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_68c10.dir/build.make CMakeFiles/cmTC_68c10.dir/build
+Building C object CMakeFiles/cmTC_68c10.dir/CheckFunctionExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=lsetxattr -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -MD -MT CMakeFiles/cmTC_68c10.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_68c10.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_68c10.dir/CheckFunctionExists.c.o -c /usr/local/Cellar/cmake/3.21.1/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_68c10
+/usr/local/Cellar/cmake/3.21.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68c10.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=lsetxattr -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/libpcap/lib  CMakeFiles/cmTC_68c10.dir/CheckFunctionExists.c.o -o cmTC_68c10 
+Undefined symbols for architecture x86_64:
+  "_lsetxattr", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_68c10] Error 1
+make: *** [cmTC_68c10/fast] Error 2
+
+
+
+Determining if the function _aligned_alloc exists failed with the following output:
+Change Dir: /Users/me/Code/Previous-tweaks/previous-code/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_488ce/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_488ce.dir/build.make CMakeFiles/cmTC_488ce.dir/build
+Building C object CMakeFiles/cmTC_488ce.dir/CheckFunctionExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=_aligned_alloc -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -MD -MT CMakeFiles/cmTC_488ce.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_488ce.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_488ce.dir/CheckFunctionExists.c.o -c /usr/local/Cellar/cmake/3.21.1/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_488ce
+/usr/local/Cellar/cmake/3.21.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_488ce.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=_aligned_alloc -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/libpcap/lib  CMakeFiles/cmTC_488ce.dir/CheckFunctionExists.c.o -o cmTC_488ce 
+Undefined symbols for architecture x86_64:
+  "__aligned_alloc", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_488ce] Error 1
+make: *** [cmTC_488ce/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test HAVE_STRUCT_DIRENT_D_NAMELEN failed with the following output:
+Change Dir: /Users/me/Code/Previous-tweaks/previous-code/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ff699/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ff699.dir/build.make CMakeFiles/cmTC_ff699.dir/build
+Building C object CMakeFiles/cmTC_ff699.dir/src.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc -DHAVE_STRUCT_DIRENT_D_NAMELEN  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -MD -MT CMakeFiles/cmTC_ff699.dir/src.c.o -MF CMakeFiles/cmTC_ff699.dir/src.c.o.d -o CMakeFiles/cmTC_ff699.dir/src.c.o -c /Users/me/Code/Previous-tweaks/previous-code/build/CMakeFiles/CMakeTmp/src.c
+/Users/me/Code/Previous-tweaks/previous-code/build/CMakeFiles/CMakeTmp/src.c:6:38: error: no member named 'd_namelen' in 'struct dirent'; did you mean 'd_namlen'?
+  (void)sizeof(((struct dirent *)0)->d_namelen);
+                                     ^~~~~~~~~
+                                     d_namlen
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/sys/dirent.h:112:15: note: 'd_namlen' declared here
+struct dirent __DARWIN_STRUCT_DIRENTRY;
+              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/sys/dirent.h:106:14: note: expanded from macro '__DARWIN_STRUCT_DIRENTRY'
+        __uint16_t  d_namlen;   /* length of string in d_name */ \
+                    ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_ff699.dir/src.c.o] Error 1
+make: *** [cmTC_ff699/fast] Error 2
+
+
+Source file was:
+
+#include <dirent.h>
+
+int main()
+{
+  (void)sizeof(((struct dirent *)0)->d_namelen);
+  return 0;
+}
+

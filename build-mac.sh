@@ -1,5 +1,4 @@
-
-REVIOUSDIR=previous-code
+PREVIOUSDIR=previous-code
 
 if [ -z $PREVIOUSDIR ]
 then
@@ -22,9 +21,6 @@ export CPPFLAGS="-I/usr/local/opt/libpcap/include"
 
 # tweak font
 sh tweak.sh
-
-#1038
-rm previous-code/src/slirp/version
 
 mkdir -p previous-code/build
 cd previous-code/build

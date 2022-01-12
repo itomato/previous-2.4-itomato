@@ -1,0 +1,8 @@
+{ "title": "Previous", "icon": "Previous.icns", "background": "background.png",
+  "contents": [
+    { "x": 523, "y": 190, "type": "link", "path": "/Applications" },
+    { "x": 141, "y": 190, "type": "file", "path": "Previous.app" },
+    { "x": 523, "y": 302, "type": "file", "path": "Disks" },
+    { "x": 141, "y": 302, "type": "file", "path": "NeXT ROMs" }
+  ]
+}
